@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        section > div{
+            display: inline-block;
+            padding: 50px;
+        }
+        #q1 > img{
+            transform: scale(1.5);
+        }
+        #q2 > img{
+            transform: translate(50px, -40px);
+        }
+        #q3 > img{
+            transform: rotate(90deg);
+        }
+        #q4 > img{
+            transform: skew(20deg, 35deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com amnimação em css</h1>
+    <p>abaixo temos todos os tiopos de transform</p>
+    <section>
+        <div id="q0">
+            <img src="imagens/bola.png" alt="imagem bola">
+        <p>Normal</p>
+        </div>
+        <div id="q1">
+            <img src="imagens/bola.png" alt="imagem bola">
+        <p>Escala</p>
+        </div>
+        <div id="q2">
+            <img src="imagens/bola.png" alt="imagem bola">
+            <p>translação</p>
+        </div>
+        <div id="q3">
+            <img src="imagens/bola.png" alt="imagem bola">
+            <p>Rotação</p>
+        </div>
+        <div id="q4">
+            <img src="imagens/bola.png" alt="imagem bola">
+            <p>torcer/inclinar</p>
+        </div>
+    </section>
+</body>
+</html>

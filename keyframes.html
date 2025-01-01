@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes bounce{
+            50% {
+        transform: translateY(450px) scale(1.1,0.9); 
+            }
+
+            100% {
+        transform: translateY(1px) scale(1,1); 
+            }
+        }
+        @keyframes pump {
+            to{
+                transform: scale(1.5);
+            }
+        }
+        @keyframes twist {
+            50%{
+                transform: skew(90deg, 0deg);
+            }
+            100%{
+                transform: skew(0deg 90deg);
+            }
+        }
+        /*animation-name, 
+        animation-duration, 
+        animation-timing-function, 
+        animation-delay, 
+        animation-iteration-count, 
+        animation-direction, 
+        animation-fill-mode, 
+        animation-play-state, 
+        and animation-timeline.*/
+        section > div{
+            display: inline-block;
+            padding: 50px;
+        }
+        #q1 > img{
+            animation: 2s ease-out 2s 3 forwards alternate rotate ;
+        }
+        #q2 > img{
+            animation: 1.5s ease-in  0.5s both normal infinite  bounce ;
+        }
+        #q3 > img{
+            animation: 3s linear 4 backwards alternate-reverse pump ;
+        }
+        #q4 > img{
+            animation: 2s linear 1s 10 both alternate-reverse twist ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com amnimação em css</h1>
+    <p>abaixo temos todos os tiopos de transform</p>
+    <section>
+        <div id="q0">
+            <img src="imagens/bola.png" alt="imagem bola">
+        <p>Normal</p>
+        </div>
+        <div id="q1">
+            <img src="imagens/bola.png" alt="imagem bola">
+        <p>rotação</p>
+        </div>
+        <div id="q2">
+            <img src="imagens/bola.png" alt="imagem bola">
+            <p>translação</p>
+        </div>
+        <div id="q3">
+            <img src="imagens/bola.png" alt="imagem bola">
+            <p>Rotação</p>
+        </div>
+        <div id="q4">
+            <img src="imagens/bola.png" alt="imagem bola">
+            <p>torcer/inclinar</p>
+        </div>
+    </section>
+</body>
+</html>
